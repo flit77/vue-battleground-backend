@@ -84,7 +84,8 @@ app.get('/api/battles/public', (req, res) => {
   res.json(publicBattles);
 })
 
-app.get('/api/battles/private', authCheck, (req,res) => {
+app.get('/api/battles/private', (req,res) => {
+// app.get('/api/battles/private', authCheck, (req,res) => {
   let privateBattles = [
   {
     id: 2111,
